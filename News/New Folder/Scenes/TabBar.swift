@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct TabBar: View {
     var body: some View {
         TabView {
             News()
@@ -8,22 +8,12 @@ struct ContentView: View {
                     Image(systemName: "house")
                     Text("Home")
                 }
-
+            
             Profile ()
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Search")
-                }
-
-           // ProfileView()
                 .tabItem {
                     Image(systemName: "person")
                     Text("Profile")
                 }
         }
     }
-}
-
-#Preview {
-    ContentView()
 }
